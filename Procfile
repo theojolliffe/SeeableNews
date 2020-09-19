@@ -1,1 +1,1 @@
-web: gunicorn seeable.sgi --log-file -
+web: gunicorn seeable.wsgi --log-file -
