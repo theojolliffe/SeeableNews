@@ -139,6 +139,18 @@ text.texter {
     margin-left: 10%;
     margin-right: 10%;
 }
+.card {
+    margin: 10%;;
+}
+a#twitter {
+    color: #1DA1F2;
+}
+.wrap {
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+}
 @media only screen and (max-width: 768px) {
     .observablehq-ledge2 {
         margin-top: 5%;
