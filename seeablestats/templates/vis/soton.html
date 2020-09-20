@@ -2,16 +2,19 @@
 
 {% block content %}
 
- <div class="row" id="firstrow">
-    <div class="col-md-5" id="maintitle">   
-        <div class="title">
-            <h1 class="grey">Tottenham vs Southampton</h1>
-        </div> 
+    <div class="positionsTitle">   
+        <h1 class="positionsGrey">Tottenham vs Southampton</h1>
     </div>
-    <div class="col-md-7" id="map">       
+    <div id="positions">       
         <div id="observablehq-9a0d56c1">
-            <div class="observablehq-ledge"></div>
-            <div class="observablehq-ledge2"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="observablehq-ledge2"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="observablehq-ledge"></div>
+                </div>
+            </div>
             <div class="observablehq-chart"></div>
           </div>
           <script type="module">
@@ -24,6 +27,5 @@
             });
           </script>
     </div>
-</div>
 
 {% endblock %}
