@@ -84,9 +84,10 @@ svg {
 .iconify {
     position: fixed;
     margin: auto;
-    margin-right: 5%;
-}
-.iconify { width: 28px; height: 28px; float: right }
+    margin-left: 80%;
+    width: 28px; 
+    height: 28px; 
+    float: right }
 .navcont {
     margin-left: 5%;
     margin-right: 5%;
@@ -96,6 +97,7 @@ svg {
     display: flex;
     align-items: center;
     padding: 5px;
+    width: 90%;
 }
 .navbar-toggler {
     margin-right: 30px;
