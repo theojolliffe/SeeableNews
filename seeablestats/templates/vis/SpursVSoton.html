@@ -1,0 +1,40 @@
+{% extends 'vis/main.html' %}
+
+{% block metats %}
+
+<meta name="twitter:card" content="summary"></meta>
+<meta name="twitter:title" content="'Daniel's deal': How Tottenham brought Gareth Bale home"/>
+<meta name="twitter:description" content="The details behind how Spurs negotiated Bale's return to the club where he starred for six years until 2013"/>
+<meta name="twitter:image" content="https://cdn.theathletic.com/app/uploads/2020/09/19142713/GettyImages-1228585297-scaled-e1600540077993-1024x684.jpg"/>
+    
+{% endblock %}
+
+{% block content %}
+
+    <div class="positionsTitle">   
+        <h1 class="positionsGrey">Tottenham vs Southampton</h1>
+    </div>
+    <div id="positions">       
+        <div id="observablehq-9a0d56c1">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="observablehq-ledge2"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="observablehq-ledge"></div>
+                </div>
+            </div>
+            <div class="observablehq-chart"></div>
+          </div>
+          <script type="module">
+            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+            import define from "https://api.observablehq.com/@theojolliffe/spurs-positions-v-southampton.js?v=3";
+            (new Runtime).module(define, name => {
+              if (name === "ledge") return Inspector.into("#observablehq-9a0d56c1 .observablehq-ledge")();
+              if (name === "ledge2") return Inspector.into("#observablehq-9a0d56c1 .observablehq-ledge2")();
+              if (name === "chart") return Inspector.into("#observablehq-9a0d56c1 .observablehq-chart")();
+            });
+          </script>
+    </div>
+
+{% endblock %}

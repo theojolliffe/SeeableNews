@@ -12,6 +12,9 @@ def spurs(request):
 def soton(request):
     return render(request, 'vis/soton.html')
 
+def spursVSoton(request):
+    return render(request, 'vis/SpursVSoton.html')
+
 def home(request):
     return render(request, 'home.html')
 
