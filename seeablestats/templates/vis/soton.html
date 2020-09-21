@@ -1,5 +1,15 @@
 {% extends 'vis/main.html' %}
 
+
+
+{% load simple_open_graph %}
+
+{% block extra_head %}
+    {% opengraph_meta "url=object.get_absolute_url, title=object.title, type='website', image=uimage.url" %}
+{% endblock %}
+
+
+
 {% block content %}
 
     <div class="positionsTitle">   
