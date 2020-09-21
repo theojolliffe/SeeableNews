@@ -14,3 +14,6 @@ def soton(request):
 
 def home(request):
     return render(request, 'home.html')
+
+def teams(request):
+    return render(request, 'teams.html')

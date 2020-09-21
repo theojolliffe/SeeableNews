@@ -141,18 +141,22 @@ text.texter {
 }
 .card {
     margin: 10%;;
+    margin-top: 5%;;
 }
 a#twitter {
     color: #1DA1F2;
 }
 .wrap {
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 20%;
     margin-right: 20%;
     color: white;
 }
 p {
     font-family: "Montserrat";
+}
+.cardLink {
+    margin-left: 100px;
 }
 @media only screen and (max-width: 768px) {
     .observablehq-ledge2 {
