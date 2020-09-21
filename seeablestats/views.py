@@ -9,8 +9,11 @@ def ndombele(request):
 def spurs(request):
     return render(request, 'spurs.html')
 
-def soton(request):
-    return render(request, 'vis/soton.html')
+def liverpool(request):
+    return render(request, 'liverpool.html')
+
+def liverpoolVChelsea(request):
+    return render(request, 'vis/LiverpoolVChelsea.html')
 
 def spursVSoton(request):
     return render(request, 'vis/SpursVSoton.html')
