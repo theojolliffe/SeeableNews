@@ -158,6 +158,12 @@ p {
 .cardLink {
     margin-left: 100px;
 }
+.ledgeCont {
+    width: 100%;
+    margin: auto;
+    margin-left: 25%;
+    margin-top: 15%;
+}
 @media only screen and (max-width: 768px) {
     .observablehq-ledge2 {
         margin-top: 5%;
@@ -174,7 +180,17 @@ p {
         font-size: 40px;
     }
     .col-md-6 {
-        margin-top: 20px;
+        margin-top: 0px;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .col-md-6#ledge2 {
+        margin-top: 0px;
+        width: 50%;
+        margin-left: 35%;
+    }
+    .ledgeCont {
+        margin-left: 10%;
     }
     .title {
         text-align: center;
@@ -200,5 +216,9 @@ p {
         letter-spacing: 1px;
         color: rgb(0, 0, 0);
         font-size: 2.2rem;
+    }
+    .observablehq-chart {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
