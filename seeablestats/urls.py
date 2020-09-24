@@ -10,6 +10,6 @@ urlpatterns = [
     path('spurs', views.spurs, name='spurs'),
     path('teams', views.teams, name='teams'),
     path('players', views.players, name='players'),
-    path('Skriniar', views.skriniar, name='Skriniar'),
+    path('SpursCB', views.skriniar, name='SpursCB'),
     path('', views.home, name='home'),
 ]
