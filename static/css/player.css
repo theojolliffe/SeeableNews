@@ -186,7 +186,7 @@ div {
 
 }
 .observablehq-viewof-dd2 {
-    transform: translate(0px, -100px);
+    transform: translate(0px, 0px);
 }
 span.observablehq--inspect {
     visibility: hidden;
