@@ -1,0 +1,62 @@
+{% extends 'vis/main.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="positionsTitle">   
+    <h1 class="positionsGrey">Milan Škriniar</h1>
+</div>
+
+<div class="container">
+
+    <div id="observablehq-2973665d">
+
+        <div class="row" style="height: 250px;">
+
+            <div class="col-md-4">
+                <div class="observablehq-viewof-mapShows"></div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="observablehq-viewof-dd3"></div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="observablehq-legend"></div>
+            </div>
+
+        </div>
+
+        <div class="row" style="height: 250px;">
+
+            <div class="col-md-4">
+                <div class="observablehq-viewof-dd2"></div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="observablehq-chart"></div>
+            </div>
+            
+        </div>
+
+        <div class="observablehq-tooltip"></div>
+
+    </div>
+
+    <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/1a2154c6a393dcc0.js?v=3";
+        (new Runtime).module(define, name => {
+          if (name === "legend") return Inspector.into("#observablehq-2973665d .observablehq-legend")();
+          if (name === "chart") return Inspector.into("#observablehq-2973665d .observablehq-chart")();
+          if (name === "viewof mapShows") return Inspector.into("#observablehq-2973665d .observablehq-viewof-mapShows")();
+          if (name === "viewof dd2") return Inspector.into("#observablehq-2973665d .observablehq-viewof-dd2")();
+          if (name === "viewof dd3") return Inspector.into("#observablehq-2973665d .observablehq-viewof-dd3")();
+          if (name === "tooltip") return Inspector.into("#observablehq-2973665d .observablehq-tooltip")();
+        });
+    </script>
+
+</div>
+
+{% endblock %}

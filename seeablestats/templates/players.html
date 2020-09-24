@@ -1,0 +1,28 @@
+{% extends 'mainTeams.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<h1>Players</h1>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-sm">
+            <a class="cardLink" style="display:block" href='Skriniar'>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{% static '/media/JoseAndKane.jpg' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Milan Škriniar</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

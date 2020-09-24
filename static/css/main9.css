@@ -164,6 +164,34 @@ p {
     margin-left: 25%;
     margin-top: 15%;
 }
+label {
+    color: white;
+}
+.svg-tooltip {
+    font-family: Montserrat;
+}
+option {
+    color: white;
+    background-color: #0D162A;
+}
+.col-md-4 {
+    padding-top: 5%;
+}
+g.radar {
+    transform: translate(300px, 250px);
+}
+div {
+    color: white;
+    font: 500 .9rem "Montserrat";
+
+}
+.observablehq-viewof-dd2 {
+    transform: translate(0px, -100px);
+}
+span.observablehq--inspect {
+    visibility: hidden;
+}
+
 @media only screen and (max-width: 768px) {
     .observablehq-ledge2 {
         margin-top: 5%;

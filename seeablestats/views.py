@@ -23,3 +23,9 @@ def home(request):
 
 def teams(request):
     return render(request, 'teams.html')
+
+def players(request):
+    return render(request, 'players.html')
+
+def skriniar(request):
+    return render(request, 'skriniar.html')

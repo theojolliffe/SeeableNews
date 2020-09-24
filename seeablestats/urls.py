@@ -9,5 +9,7 @@ urlpatterns = [
     path('LiverpoolVChelsea', views.liverpoolVChelsea, name='LiverpoolVChelsea'),
     path('spurs', views.spurs, name='spurs'),
     path('teams', views.teams, name='teams'),
+    path('players', views.players, name='players'),
+    path('Skriniar', views.skriniar, name='Skriniar'),
     path('', views.home, name='home'),
 ]
