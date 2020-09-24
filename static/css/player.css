@@ -1,0 +1,207 @@
+
+body{
+    background-color: #1A2930;
+}
+.bg-dark {
+    background-color: #1A2930 !important;
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin: 0 0 0;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+}
+h1 {
+    font-size: 50px;
+}
+.table {
+    margin: auto;
+    color: rgba(255,255,255,.6);
+}
+.thin {
+    font-weight: 200;
+}
+.grey {
+    font-weight: 100;
+    color: gray;
+}
+.positionsGrey {
+    font-weight: 100;
+    color: gray;
+    text-align: center !important;
+}
+svg {
+    overflow: visible;
+}
+.iconify {
+    position: fixed;
+    margin: auto;
+    margin-left: 80%;
+    width: 28px; 
+    height: 28px; 
+    float: right }
+.navcont {
+    margin-left: 5%;
+    margin-right: 5%;
+    position: fixed;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 90%;
+}
+.navbar-toggler {
+    margin-right: 30px;
+}
+.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark {
+    height: 50px;
+}
+h2 {
+    text-align: center;
+    margin: 0 0 0;
+    font-family: 'Esteban', serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+}
+.heading {
+    padding: 10%
+}
+.svgcont {
+    width:10%;
+    margin:20%;
+    padding: auto;
+    height:800px;
+}
+.svgcont2 {
+    width:10%;
+    margin:auto;
+    padding: auto;
+    height:500px;
+}
+.svgcont3 {
+    width:10%;
+    margin:auto;
+    padding: auto;
+    height:600px;
+}
+.positionsTitle {
+    margin-top: 100px;
+}
+text {
+    font-family: "Montserrat";
+    fill: white;
+}
+circle {
+    color: white
+}
+line {
+    color: white
+}
+text.legendText {
+    fill: white;
+    font-size: 1rem
+}
+text.legendTitle {
+    font-size: 1rem;
+    font-weight: 500;
+}
+text.texter {
+    fill: #1A2930;
+}
+.row {
+    height: 200px;
+}
+.observablehq-ledge2 {
+    margin-left: 25%;;
+    margin-top: 10%;
+}
+.observablehq-ledge {
+    margin-top: 20%;
+}
+.ttText {
+    fill: #1A2930
+}
+.col-md-6 {
+    z-index: -1;
+}
+.observablehq-chart {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.card {
+    margin: 10%;;
+    margin-top: 5%;;
+}
+a#twitter {
+    color: #1DA1F2;
+}
+.wrap {
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+}
+p {
+    font-family: "Montserrat";
+}
+.cardLink {
+    margin-left: 100px;
+}
+.ledgeCont {
+    width: 100%;
+    margin: auto;
+    margin-left: 25%;
+    margin-top: 15%;
+}
+label {
+    color: white;
+}
+.svg-tooltip {
+    font-family: Montserrat;
+}
+option {
+    color: white;
+    background-color: #0D162A;
+}
+.col-md-4 {
+    padding-top: 5%;
+}
+g.radar {
+    transform: translate(200px, 250px);
+}
+div {
+    color: white;
+    font: 500 .9rem "Montserrat";
+
+}
+.observablehq-viewof-dd2 {
+    transform: translate(0px, -100px);
+}
+span.observablehq--inspect {
+    visibility: hidden;
+}
+.row#radarLegend {
+    height: 250px;
+}
+@media only screen and (max-width: 768px) {
+    .col-md-4 {
+        padding-left: 30%;
+    }
+    .row#radarLegend {
+        height: 450px;
+    }
+    .col-lg-4 {
+        padding: 20%;
+    }
+}

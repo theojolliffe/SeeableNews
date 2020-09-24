@@ -178,7 +178,7 @@ option {
     padding-top: 5%;
 }
 g.radar {
-    transform: translate(300px, 250px);
+    transform: translate(200px, 250px);
 }
 div {
     color: white;

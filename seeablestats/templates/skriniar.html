@@ -1,4 +1,4 @@
-{% extends 'vis/main.html' %}
+{% extends 'vis/playpage.html' %}
 
 {% block content %}
 
@@ -12,7 +12,7 @@
 
     <div id="observablehq-2973665d">
 
-        <div class="row" style="height: 250px;">
+        <div class="row" id="radarLegend">
 
             <div class="col-md-4">
                 <div class="observablehq-viewof-mapShows"></div>
@@ -30,12 +30,12 @@
 
         <div class="row" style="height: 250px;">
 
-            <div class="col-md-4">
-                <div class="observablehq-viewof-dd2"></div>
+            <div class="col-lg-8">
+                <div class="observablehq-chart"></div>
             </div>
 
-            <div class="col-md-8">
-                <div class="observablehq-chart"></div>
+            <div class="col-lg-4">
+                <div class="observablehq-viewof-dd2"></div>
             </div>
             
         </div>
