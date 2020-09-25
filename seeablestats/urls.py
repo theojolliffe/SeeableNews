@@ -5,6 +5,7 @@ from . import views
 urlpatterns = [
     path('ndombele', views.ndombele, name='ndombele'),
     path('liverpool', views.liverpool, name='liverpool'),
+    path('SpursVShkendija', views.spursVShkendija, name='SpursVShkendija'),
     path('SpursVSoton', views.spursVSoton, name='SpursVSoton'),
     path('LiverpoolVChelsea', views.liverpoolVChelsea, name='LiverpoolVChelsea'),
     path('spurs', views.spurs, name='spurs'),

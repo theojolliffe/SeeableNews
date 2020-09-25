@@ -4,28 +4,31 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def ndombele(request):
-    return render(request, 'vis/ndombele.html')
+    return render(request, 'Landing/ndombele.html')
 
 def spurs(request):
-    return render(request, 'spurs.html')
+    return render(request, 'Teams/Spurs/spurs.html')
 
 def liverpool(request):
-    return render(request, 'liverpool.html')
+    return render(request, 'Teams/Liverpool/liverpool.html')
 
 def liverpoolVChelsea(request):
-    return render(request, 'vis/LiverpoolVChelsea.html')
+    return render(request, 'Teams/Liverpool/Matches/LiverpoolVChelsea.html')
 
 def spursVSoton(request):
-    return render(request, 'vis/SpursVSoton.html')
+    return render(request, 'Teams/Spurs/Matches/SpursVSoton.html')
+
+def spursVShkendija(request):
+    return render(request, 'Teams/Spurs/Matches/Shkendija.html')
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'Landing/home.html')
 
 def teams(request):
-    return render(request, 'teams.html')
+    return render(request, 'Landing/teams.html')
 
 def players(request):
-    return render(request, 'players.html')
+    return render(request, 'Landing/players.html')
 
 def skriniar(request):
-    return render(request, 'skriniar.html')
+    return render(request, 'Teams/Spurs/Players/skriniar.html')

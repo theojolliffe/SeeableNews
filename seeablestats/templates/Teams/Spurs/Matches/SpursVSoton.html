@@ -1,0 +1,53 @@
+{% extends 'Landing/main.html' %}
+
+{% block metats %}
+{% load static %}
+
+<meta name="twitter:card" content="summary_large_image"></meta>
+<meta name="twitter:title" content="Spurs player ratings/touch map uncover a huge contribution from PEH"/>
+<meta name="twitter:description" content="A closer look at the performances of a team playing behind two world class strikers"/>
+<meta name="twitter:image" content="https://lh3.googleusercontent.com/bV5qYvh-6mPwLcC5S-hXSnByOzqhLDgbPCwTF8KqB-SDrFm7wf_6lQ_LsTKfUo1VnJ82XMZCuXTsob4veMJ5NhCAqEHQLjb7TJVtnZxrApSQJtouNRkxTaYVau-ovCBjg4kI53lLBQ=w2400"/>
+ 
+<meta property="og:title" content="Spurs player ratings/touch map uncover a huge contribution from PEH" />
+<meta property="og:type" content="article" /> 
+<meta property="og:url" content="http://seeablenews.com/SpursVSoton" />
+<meta property="og:image" content="https://lh3.googleusercontent.com/bV5qYvh-6mPwLcC5S-hXSnByOzqhLDgbPCwTF8KqB-SDrFm7wf_6lQ_LsTKfUo1VnJ82XMZCuXTsob4veMJ5NhCAqEHQLjb7TJVtnZxrApSQJtouNRkxTaYVau-ovCBjg4kI53lLBQ=w2400" />
+
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="positionsTitle">   
+        <h1 class="positionsGrey">Tottenham vs Southampton</h1>
+    </div>
+    <div id="positions">       
+        <div id="observablehq-9a0d56c1">
+
+            
+            <div class="row" style="height: 250px;">
+                <div class="col-md-6" id="ledge2">
+                    <div class="ledgeCont">
+                        <div class="observablehq-ledge2" style="margin-top: 0"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="observablehq-ledge" style="margin-top: 17%"></div>
+                </div>
+            </div>
+
+
+            <div class="observablehq-chart"></div>
+        </div>
+          <script type="module">
+            import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+            import define from "https://api.observablehq.com/@theojolliffe/spurs-positions-v-southampton.js?v=3";
+            (new Runtime).module(define, name => {
+              if (name === "ledge") return Inspector.into("#observablehq-9a0d56c1 .observablehq-ledge")();
+              if (name === "ledge2") return Inspector.into("#observablehq-9a0d56c1 .observablehq-ledge2")();
+              if (name === "chart") return Inspector.into("#observablehq-9a0d56c1 .observablehq-chart")();
+            });
+          </script>
+    </div>
+
+{% endblock %}
